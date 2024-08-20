@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is an end-to-end machine learning solution designed to predict student performance using key features like study time, test scores, and more. The repository includes exploratory data analysis (EDA), model training, and a Flask-based web application for real-time predictions. The project is built using modular programming for clean, maintainable code.
+This project is an end-to-end machine learning solution designed to predict student performance using key features like parents' education, lunch type, race/ethnicity, and reading and writing scores. The repository includes exploratory data analysis (EDA), model training, and a Flask-based web application for real-time predictions. The project is built using modular programming for clean, maintainable code and deployed using AWS Elastic Beanstalk and CodePipeline.
 
 ## Project Structure
 
@@ -20,6 +20,7 @@ This project is an end-to-end machine learning solution designed to predict stud
 - **Matplotlib & Seaborn**: Data visualization.
 - **Scikit-learn**: Machine learning model building and evaluation.
 - **Flask**: Web framework for deploying the model.
+- **AWS Elastic Beanstalk & CodePipeline:** Deployment of the web application
 - **Jupyter Notebook**: Interactive environment for EDA and model training.
 
 ## Key Features
@@ -32,9 +33,9 @@ This project is an end-to-end machine learning solution designed to predict stud
    - Custom-built modules for data preprocessing and model evaluation.
    - Implementation of machine learning algorithms to predict outcomes.
 
-3. **Deployment**:
+3. **Deployment:**
    - Flask-based web application allowing real-time predictions.
-   - User-friendly interface for inputting new data.
+   - Deployed using AWS Elastic Beanstalk and CodePipeline.
 
 ## Installation
 
@@ -64,6 +65,10 @@ python app.py
 - Data Preprocessing: Handles missing data, feature engineering, and normalization.
 - Model Training & Evaluation: Implements multiple ML models with cross-validation.
 - Web Interface: Flask app for user input and model predictions.
+
+## Live Application
+
+You can access the live application [here](http://studentperformance-env.eba-hgt29p3d.ap-south-1.elasticbeanstalk.com).
 
 ## License
 
