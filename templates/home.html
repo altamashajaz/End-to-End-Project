@@ -5,9 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Performance Prediction</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .form-container {
+            max-width: 600px; 
+            margin: auto;
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <div class="container mt-5">
+    <div class="container mt-5 form-container">
         <h1 class="text-center">Predict Math Score</h1>
         <form action="/predictdata" method="POST">
             <div class="form-group">
@@ -61,12 +70,6 @@
             </div>
             <button type="submit" class="btn btn-primary">Predict Math Score</button>
         </form>
-        <!-- Result Display -->
-        <h2 class="mt-5 text-center" id="result">
-            {% if result is not none %}
-                Predicted Math Score: {{ results }}
-            {% endif %}
-        </h2>
     </div>
 </body>
 </html>

@@ -39,7 +39,7 @@ def predict_datapoint():
             predict_pipeline = PredictPipeline()
             results = predict_pipeline.predict(pred_df)
 
-            return render_template('home.html', results=results[0])
+            return render_template('result.html', results=results[0])
         except Exception as e:
             print(f"Error occurred: {e}")
             return render_template('home.html', results="Error occurred during prediction.")
